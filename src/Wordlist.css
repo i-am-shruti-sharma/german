@@ -1,0 +1,88 @@
+.word-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .word-card {
+    padding: 20px;
+    border-radius: 12px;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .left{
+    max-width: 400px;
+  }
+  .left h3{
+    margin: 0;
+    font-size: 30px;
+  }
+  .left p{
+    margin: 0;
+  }
+  .right{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+  }
+  .word-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Apply different gradients using :nth-child */
+  .word-card:nth-child(1) {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft Blue */
+  }
+  
+  .word-card:nth-child(2) {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Gentle Grayish-Blue */
+  }
+  
+  .word-card:nth-child(3) {
+    background: linear-gradient(to right, #f3e7e9, #e3eeff); /* Soft Pink-Blue */
+  }
+  
+  .word-card:nth-child(4) {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Light Coral */
+  }
+  
+  .word-card:nth-child(5) {
+    background: linear-gradient(to right, #cfd9df, #e2ebf0); /* Neutral Gray */
+  }
+  
+  .word-card:nth-child(6) {
+    background: linear-gradient(to right, #d9a7c7, #fffcdc); /* Warm Peach */
+  }
+  
+  .word-card:nth-child(7) {
+    background: linear-gradient(to right, #c1dfc4, #deecdd); /* Soft Green */
+  }
+  
+  .word-card:nth-child(8) {
+    background: linear-gradient(to right, #f7d9c4, #e2a1a6); /* Muted Peach-Pink */
+  }
+  
+  .word-card:nth-child(9) {
+    background: linear-gradient(to right, #e2ebf0, #cfd9df); /* Soft Blue-Grey */
+  }
+  
+  .word-card:nth-child(10) {
+    background: linear-gradient(to right, #ffefba, #ffffff); /* Light Gold */
+  }
+  
+
+  .word-list-container{
+    padding: 10px;
+  }
+
+  .word-list-container h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+  }

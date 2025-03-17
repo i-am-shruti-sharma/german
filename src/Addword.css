@@ -1,0 +1,88 @@
+.add-word{
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+.add-word.center{
+    justify-content:center;
+}
+ .add-word h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    gap: 10px;
+ } 
+ .add-word h2 img{
+    height: 160px;
+    filter: drop-shadow(-2px 0px 2px black);
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ .add-word h2 img:hover{
+    transform: scale(1.1);
+ }
+
+  .form{
+      display:none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .form.show{
+    display:flex;
+}
+  .form input{
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 10px;
+    background: #b5b8b5;
+    color: #1f281f;
+    font-size: 14px;
+  }
+  .form textarea{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #b5b8b5;
+    color: #1f281f;
+    font-size: 14px;
+    height: 90px;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .btn-cont{
+    display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        flex-wrap: wrap;
+
+  }
+  .record{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .record p{
+      margin:0;
+  }
+  .d-flex{
+    display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap:10px;
+  }
+  .d-flex input{
+    width: 50%;
+  }
