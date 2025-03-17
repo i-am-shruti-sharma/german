@@ -31,9 +31,7 @@
         align-items: flex-end;
         gap: 10px;
   }
-  .word-card:hover {
-    transform: scale(1.05);
-  }
+
   
   /* Apply different gradients using :nth-child */
   .word-card:nth-child(1) {
@@ -86,3 +84,64 @@
     font-size: 40px;
     font-weight: 500;
   }
+
+  audio{
+      width:280px;
+  }
+
+  .search-inp{
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 20px;
+    background: rgba(255, 255, 255, 0.87);
+    color: #1f281f;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    position: sticky;
+    top: 10px;
+  }
+
+  .search-cont{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: #778a8f;
+    padding: 10px 0 10px 0;
+  }
+
+
+
+@media (max-width:760px){
+
+    .word-list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .word-card{
+        flex-direction: column;
+        width: 89%;
+        gap: 20px;
+        padding: 10px;
+    }
+
+
+    .search-inp{
+        top: 10px;
+        width: 80%;
+    }
+    .search-cont{
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        background: #778a8f;
+        padding: 10px 0 10px 0;
+        width: 100%;
+    }
+}

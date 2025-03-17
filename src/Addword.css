@@ -43,7 +43,7 @@
     border: none;
     border-radius: 8px;
     padding: 0px 10px;
-    background: #b5b8b5;
+    background: #dedfde;
     color: #1f281f;
     font-size: 14px;
   }
@@ -51,7 +51,7 @@
     border: none;
     border-radius: 8px;
     padding: 10px;
-    background: #b5b8b5;
+    background: #dedfde;
     color: #1f281f;
     font-size: 14px;
     height: 90px;
@@ -85,4 +85,11 @@
   }
   .d-flex input{
     width: 50%;
+  }
+
+  @media (max-width:760px){
+    .add-word{
+      flex-direction: column;
+      align-items: center;
+    }
   }

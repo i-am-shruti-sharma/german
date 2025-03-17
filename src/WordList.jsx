@@ -8,6 +8,11 @@ const UPLOAD_PRESET = "img-uploader";
 
 function WordList() {
   const [words, setWords] = useState([]);
+  const [searchQuery, setSearchQuery] = useState(""); // 🔹 Search state
+ // 🔹 Filter words based on search query
+ const filteredWords = words.filter(word =>
+    word.word.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   useEffect(() => {
     async function fetchWords() {
@@ -65,7 +70,22 @@ function WordList() {
   return (
     <div className="word-list-container">
       <h2>Glossary 📚</h2>
-      {words.map((word) => (
+
+        {/* 🔹 Search Input */}
+        <div className="search-cont">
+        <input
+        type="text"
+        placeholder="Search words..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-inp"
+      />
+        </div>
+       
+
+      {/* <div className="word-cont"> */}
+
+      {filteredWords.map((word) => (
         <div key={word.id} className="word-card">
             <div className="left">
             <h3>{word.word}</h3>
@@ -90,6 +110,8 @@ function WordList() {
           
         </div>
       ))}
+      {/* </div> */}
+
     </div>
   );
 }
